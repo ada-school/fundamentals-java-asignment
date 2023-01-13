@@ -1,38 +1,35 @@
 <img align="right" src="https://github.com/ada-school/module-template/blob/main/ada.png">
 
 
-## <REPLACE WITH CODELAB NAME>
+## Implementing your First Function/Method in Java
 
-<Replace with codelab descrition>
 
 **Learning Objectives**
 
-- [ ]  /*replace with learning objetives*/
+- [ ]  Implement a function/method using Java.
 
+## Orientation to Details 🤹🏽
 
-
-## /*Replace with Human Skill to be practice*/ 🤹🏽 
-
-/*replace with brief introduction of human skill in the context of the codelab*/
+Being **Detailed Oriented** will help you spot common functionality in your code that can be extracted and reuse into
+functions or methods.
 
 **Main Topics**
 
-* /*replace with main topic 1*/
-* /*replace with main topic 2*/
-* /*replace with main topic 2*/
-
-
+* Functions/Methods.
+* Refactoring.
 
 ## Codelab 🧪
 
 🗣️ "I hear and I forget I see and I remember I do and I understand." Confucius
 
+### Part 1: Implementing your first function:
 
+1. Open the file **Main.java** and implement the **isValidEmailAddress** function, that takes as input a String, and it
+   returns **true** if is a valid email address or **false** otherwise.
 
-### Part 1: /*Replace with Part 1 title*/:
+### Advance Challenge: implement a second function from scratch
 
-### Advance Challenge: <replace with challenge title>
+1. Implement a second function that validates a telephone number including a valid country code.
 
-1. /*replace with addicional challenge for advanced students*/
-
-   ***Hint***: /*replace with a hint that help students solve the challenge*/
+   ***Hint***: Read carefully the written code on the **isValidEmailAddress** and copy and paste this block and change
+   the name to something meaningful.
