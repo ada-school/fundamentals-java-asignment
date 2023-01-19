@@ -1,3 +1,5 @@
+import jdk.tools.jlink.internal.plugins.ExcludeVMPlugin
+
 plugins {
     id 'java'
 }
@@ -16,4 +18,11 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+def adaAssignmentURL = 'https://learn.ada-school.org/cohorts/{cohortId}/assigments/{assignmentId}'
+
+task adaSubmit(type: Exec) {
+    environment "JAVA_HOME", "${System.properties['java.home']}"
+    commandLine 'ada-client.exe', 'submit', adaAssignmentURL
 }
