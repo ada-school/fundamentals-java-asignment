@@ -20,9 +20,12 @@ test {
     useJUnitPlatform()
 }
 
-def adaAssignmentURL = 'https://learn.ada-school.org/cohorts/{cohortId}/assigments/{assignmentId}'
-
 task adaSubmit(type: Exec) {
     environment "JAVA_HOME", "${System.properties['java.home']}"
-    commandLine 'ada-client.exe', 'submit', adaAssignmentURL
+
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine 'ada-client.exe', 'submit'
+    } else {
+        commandLine './ada-client', 'submit'
+    }
 }
